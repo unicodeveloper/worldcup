@@ -166,16 +166,10 @@ export default function Home() {
     <main className="shell">
       <header className="topbar">
         <div className="brand">
-          <span className="brandMark">WCS</span>
-          <div>
-            <strong>World Cup Seer</strong>
-            <small>Match intelligence · 2026</small>
-          </div>
+          <span className="brandMark" aria-hidden="true">WCS</span>
+          <strong>World&nbsp;Cup Seer</strong>
+          <span className="brandTag">Match intelligence · 2026</span>
         </div>
-        <span className={`statusPill${ratingsLive ? " live" : ""}`}>
-          <span className="dot" />
-          {ratingsLive ? "Live Elo model" : "Estimated model"}
-        </span>
       </header>
 
       {/* Hero */}
